@@ -1,13 +1,14 @@
 const express = require('express');
-const connectDB = require('./src/Database/context');
+const elementosRoutes = require('./src/routes/ElementoRoutes');
+const compuestosRoutes = require('./src/routes/CompuestoRoutes');
+
 const app = express();
 
-// Conectar a MongoDB
-connectDB();
+// Middleware
+app.use(express.json());
 
-//puerto
-const port = process.env.APP_PORT || 5000;
+// Configuración de rutas
+app.use('/api/elementos', elementosRoutes);
+app.use('/api/compuestos', compuestosRoutes);
 
-app.listen(port , () => {
-    console.log(`Servidor corriendo en el puerto ${port}`);
-});
+module.exports = app;
