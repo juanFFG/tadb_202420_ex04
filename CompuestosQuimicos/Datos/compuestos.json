@@ -1,13 +1,52 @@
 [
     {
-      "nombre": "Agua",
-      "formulaQuimica": "H2O",
-      "masaMolar": 18.015,
-      "estadoAgregacion": "Líquido",
-      "elementos": [
-        { "elementoId": "ObjectId('id_del_hidrogeno')", "cantidadAtomos": 2 },
-        { "elementoId": "ObjectId('id_del_oxigeno')", "cantidadAtomos": 1 }
-      ]
+        "nombre": "Agua",
+        "formulaQuimica": "H2O",
+        "masaMolar": 18.015,
+        "estadoAgregacion": "Líquido",
+        "elementos": [
+            { "elementoId": "ID_DEL_HIDROGENO", "cantidadAtomos": 2 },
+            { "elementoId": "ID_DEL_OXIGENO", "cantidadAtomos": 1 }
+        ]
+    },
+    {
+        "nombre": "Dióxido de Carbono",
+        "formulaQuimica": "CO2",
+        "masaMolar": 44.01,
+        "estadoAgregacion": "Gas",
+        "elementos": [
+            { "elementoId": "ID_DEL_CARBONO", "cantidadAtomos": 1 },
+            { "elementoId": "ID_DEL_OXIGENO", "cantidadAtomos": 2 }
+        ]
+    },
+    {
+        "nombre": "Amoníaco",
+        "formulaQuimica": "NH3",
+        "masaMolar": 17.031,
+        "estadoAgregacion": "Gas",
+        "elementos": [
+            { "elementoId": "ID_DEL_NITROGENO", "cantidadAtomos": 1 },
+            { "elementoId": "ID_DEL_HIDROGENO", "cantidadAtomos": 3 }
+        ]
+    },
+    {
+        "nombre": "Metano",
+        "formulaQuimica": "CH4",
+        "masaMolar": 16.04,
+        "estadoAgregacion": "Gas",
+        "elementos": [
+            { "elementoId": "ID_DEL_CARBONO", "cantidadAtomos": 1 },
+            { "elementoId": "ID_DEL_HIDROGENO", "cantidadAtomos": 4 }
+        ]
+    },
+    {
+        "nombre": "Cloruro de Hidrógeno",
+        "formulaQuimica": "HCl",
+        "masaMolar": 36.46,
+        "estadoAgregacion": "Gas",
+        "elementos": [
+            { "elementoId": "ID_DEL_HIDROGENO", "cantidadAtomos": 1 },
+            { "elementoId": "ID_DEL_CLORO", "cantidadAtomos": 1 }
+        ]
     }
-  ]
-  
+]
