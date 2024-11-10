@@ -1,0 +1,42 @@
+{
+    "bsonType": "object",
+    "required": ["nombre", "formulaQuimica", "masaMolar", "estadoAgregacion", "elementos"],
+    "properties": {
+      "nombre": {
+        "bsonType": "string",
+        "description": "Debe ser una cadena y es obligatorio"
+      },
+      "formulaQuimica": {
+        "bsonType": "string",
+        "description": "Debe ser una cadena única y es obligatorio"
+      },
+      "masaMolar": {
+        "bsonType": "double",
+        "minimum": 0,
+        "description": "Debe ser un número positivo y es obligatorio"
+      },
+      "estadoAgregacion": {
+        "enum": ["Sólido", "Líquido", "Gas"],
+        "description": "Debe ser uno de los valores: Sólido, Líquido o Gas"
+      },
+      "elementos": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "required": ["elementoId", "cantidadAtomos"],
+          "properties": {
+            "elementoId": {
+              "bsonType": "objectId",
+              "description": "Debe ser un ObjectId que referencia a un elemento"
+            },
+            "cantidadAtomos": {
+              "bsonType": "int",
+              "minimum": 1,
+              "description": "Debe ser un entero positivo"
+            }
+          }
+        }
+      }
+    }
+  }
+  

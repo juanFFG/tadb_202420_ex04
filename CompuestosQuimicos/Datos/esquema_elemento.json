@@ -1,0 +1,25 @@
+{
+    "bsonType": "object",
+    "required": ["nombre", "simbolo", "numeroAtomico", "configuracionElectronica"],
+    "properties": {
+      "nombre": {
+        "bsonType": "string",
+        "description": "Debe ser una cadena y es obligatorio"
+      },
+      "simbolo": {
+        "bsonType": "string",
+        "maxLength": 5,
+        "description": "Debe ser una cadena de máximo 5 caracteres y es obligatorio"
+      },
+      "numeroAtomico": {
+        "bsonType": "int",
+        "minimum": 1,
+        "description": "Debe ser un entero positivo y es obligatorio"
+      },
+      "configuracionElectronica": {
+        "bsonType": "string",
+        "description": "Debe ser una cadena y es obligatorio"
+      }
+    }
+  }
+  

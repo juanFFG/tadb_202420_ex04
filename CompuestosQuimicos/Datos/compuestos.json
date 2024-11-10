@@ -1,0 +1,13 @@
+[
+    {
+      "nombre": "Agua",
+      "formulaQuimica": "H2O",
+      "masaMolar": 18.015,
+      "estadoAgregacion": "Líquido",
+      "elementos": [
+        { "elementoId": "ObjectId('id_del_hidrogeno')", "cantidadAtomos": 2 },
+        { "elementoId": "ObjectId('id_del_oxigeno')", "cantidadAtomos": 1 }
+      ]
+    }
+  ]
+  

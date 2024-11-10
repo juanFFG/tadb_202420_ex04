@@ -1,0 +1,15 @@
+[
+    {
+      "nombre": "Hidrógeno",
+      "simbolo": "H",
+      "numeroAtomico": 1,
+      "configuracionElectronica": "1s1"
+    },
+    {
+      "nombre": "Oxígeno",
+      "simbolo": "O",
+      "numeroAtomico": 8,
+      "configuracionElectronica": "1s2 2s2 2p4"
+    }
+  ]
+  
