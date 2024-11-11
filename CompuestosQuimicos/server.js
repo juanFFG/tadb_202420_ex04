@@ -10,7 +10,7 @@ dotenv.config();
 connectDB();
 
 // Puerto de la aplicación
-const PORT = process.env.APP_PORT || 3000;
+const PORT = process.env.APP_PORT || 5000;
 
 // Iniciar el servidor
 app.listen(PORT, () => {
