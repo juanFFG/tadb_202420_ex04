@@ -1,4 +1,5 @@
-﻿# API de Compuestos Químicos por Juan Felipe Fernandez Grajales 000271761
+﻿# API de Compuestos Químicos
+### Por:  Juan Felipe Fernandez Grajales 000271761
 
 ## Descripción
 
@@ -59,13 +60,13 @@ Servidor corriendo en el puerto 3000
 Documentación Swagger disponible en: http://localhost:3000/api-docs
 ```
 
-### Documentación de la API
+## Documentación de la API
 La API está documentada utilizando Swagger. Puedes acceder a la documentación completa e interactiva en: http://localhost:3000/api-docs o el puerto que hayas indicado.
 
 Swagger permite probar los endpoints directamente desde el navegador.
 
-### Rutas Principales
-## 1. Elementos
+## Rutas Principales
+### 1. Elementos
 
 GET /api/elementos: Obtener todos los elementos
 GET /api/elementos/{id}: Obtener un elemento por su ID
@@ -84,7 +85,7 @@ Ejemplo de Objeto Elemento para Crear o Actualizar:
 }
 ```
 
-## 2. Compuestos
+### 2. Compuestos
 
 GET /api/compuestos: Obtener todos los compuestos
 GET /api/compuestos/{id}: Obtener un compuesto por su ID, incluyendo los elementos que lo componen
@@ -109,7 +110,7 @@ Ejemplo de Objeto Compuesto para Crear o Actualizar:
 }
 ```
 
-### Estructura del Proyecto
+## Estructura del Proyecto
 
 ```bash
 CompuestosQuimicos/
@@ -132,13 +133,13 @@ CompuestosQuimicos/
 └── .env                        # Archivo de variables de entorno
 ```
 
-### Archivos de Datos
+## Archivos de Datos
 Los archivos JSON de datos están en la carpeta Datos y contienen la totalidad de información inicial para las colecciones Elementos y Compuestos.
 
 - Datos/elementos.json - Elementos iniciales
 - Datos/compuestos.json - Compuestos iniciales
 
-### Pruebas
+## Pruebas
 Para realizar pruebas, puedes utilizar herramientas como Postman o la interfaz Swagger en http://localhost:3000/api-docs o el puerto que hayas indicado.
 
-### **¡Gracias por usar la API de Compuestos Químicos!**
+# **¡Gracias por usar la API de Compuestos Químicos!**
