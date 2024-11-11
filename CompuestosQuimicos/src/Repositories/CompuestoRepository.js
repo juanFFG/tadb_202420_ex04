@@ -26,6 +26,11 @@ class CompuestoRepository {
     async eliminarCompuesto(id) {
         return await Compuesto.findByIdAndDelete(id);
     }
+
+    // Buscar un compuesto por ID de elemento
+    async obtenerCompuestosPorElementoId(elementoId) {
+        return await Compuesto.find({ 'elementos.elementoId': elementoId });
+    }
 }
 
 module.exports = new CompuestoRepository();
